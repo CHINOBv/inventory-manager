@@ -4,13 +4,14 @@ const ProductSchema = new Schema({
   name: {
     type: String,
     required: true,
+    unique: true,
   },
   price: {
     type: Number,
     default: 0,
     required: true,
   },
-  quantityOnStock: {
+  inStock: {
     type: Number,
     default: 0,
     required: true,
@@ -20,7 +21,7 @@ const ProductSchema = new Schema({
     default: Date.now(),
     required: true,
   },
-  inStock: {
+  statusStock: {
     type: String,
     default: "Available",
     required: true,

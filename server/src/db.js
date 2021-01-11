@@ -14,6 +14,7 @@ mongoose.connect(
     dbName: "Invetory",
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
   },
   () => console.log("DB Is Connected")
 );
