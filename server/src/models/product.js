@@ -5,6 +5,7 @@ const ProductSchema = new Schema({
     type: String,
     required: true,
     unique: true,
+    trim: true,
   },
   price: {
     type: Number,
